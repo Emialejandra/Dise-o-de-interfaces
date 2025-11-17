@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TareaS4_Tana</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulario de Registro</h1>
+        <h2><span>Realizado por:</span> <i style="color: rgb(168, 71, 178);">Emilia Tana</i></h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Nombre -->
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre completo" required>
+
+            <!-- Edad -->
+            <label>Edad:</label>
+            <input type="number" name="edad" placeholder="Ingrese su edad" min="0" max="120" required>
+
+            <!-- Fecha de nacimiento -->
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" required>
+
+            <!-- Correo -->
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <!-- Género -->
+            <label>Género:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="genero" value="M"> Masculino</label>
+                <label><input type="checkbox" name="genero" value="F"> Femenino</label>
+            </div>
+
+            <!-- Intereses -->
+            <label>Intereses:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+                <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+                <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+            </div>
+
+            <!-- Archivo -->
+            <label>Subir archivo:</label>
+            <input type="file" name="foto">
+
+            <input type="hidden" name="id" value="001">
+
+            <!-- Botones -->
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
