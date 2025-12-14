@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP CV</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+<body>
+    <div class="container">
+        <div data-include="components/sidebar.html"></div>
+        <main class="main">
+            <!--header-->
+            <div data-include="components/header.html"></div>
+            <section class="cards">
+                <div class="card">
+                    <h3>Proyectos</h3>
+                    <p id="proyectosCount">0 registrados</p>
+                </div>
+                <div class="card">
+                    <h3>Usuarios</h3>
+                    <p>4 registrados</p>
+                </div>
+                <div class="card">
+                    <h3>Visitas</h3>
+                    <p>325 hoy</p>
+                </div>
+            </section>
+
+            <!--Tabla de proyectos-->
+            <section class="tabla-section">
+                <div class="row" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Últimos Proyectos</h2>
+                    <a href="create_project.html" class=""></a>
+                </div>
+            </section>
+            <table id="tablaproyectos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Aqui se cargarán los proyectos-->
+                    
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>
